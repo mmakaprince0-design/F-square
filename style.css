@@ -185,7 +185,34 @@ button{font-family:inherit;cursor:pointer;background:none;border:none;color:inhe
   gap:18px;
   height:min(78vh, 620px);
 }
+.password-wrapper {
+  position: relative;
+  display: block;
+}
 
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #666;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.toggle-btn:hover {
+  color: #333;
+}
 
 
 .hero__main{
