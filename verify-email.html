@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verify your email — F-square</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,560;9..144,650&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="logo">F-square</a>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<main>
+  <div class="auth-wrap">
+    <div class="auth-card" style="text-align:center;">
+      <h1 id="verifyHeading">Verifying your email…</h1>
+      <p id="verifyMessage">One moment.</p>
+      <a href="login.html" class="btn btn--dark" id="verifyCta" style="display:none;">Go to log in</a>
+    </div>
+  </div>
+</main>
+
+<script src="js/api.js"></script>
+<script>
+  (async () => {
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get('token');
+    const email = params.get('email');
+    const heading = document.getElementById('verifyHeading');
+    const message = document.getElementById('verifyMessage');
+    const cta = document.getElementById('verifyCta');
+
+    if (!token || !email) {
+      heading.textContent = 'Missing verification link';
+      message.textContent = 'This link looks incomplete. Please use the link from your email, or request a new one from the account page.';
+      cta.style.display = 'inline-flex';
+      return;
+    }
+
+    try {
+      const data = await apiFetch(
+        `/auth/verify-email?token=${encodeURIComponent(token)}&email=${encodeURIComponent(email)}`
+      );
+      heading.textContent = 'Email verified Welcome to F-square!';
+      message.textContent = data.message || 'You can now log in to your F-square account.';
+      cta.style.display = 'inline-flex';
+    } catch (err) {
+      heading.textContent = 'Verification failed';
+      message.textContent = err.message;
+      cta.style.display = 'inline-flex';
+    }
+  })();
+</script>
+</body>
+</html>

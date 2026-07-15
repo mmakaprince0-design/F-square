@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../github project"
+		},
+		{
+			"path": "../fsquare-fullstack/fsquare/frontend/{js,Pics}"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "github project"
+	}
+}

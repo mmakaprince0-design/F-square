@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F-square — Celebrate African Heritage in Every Thread</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,560;9..144,650&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Preloader -->
+ 
+<div id="preloader">
+  <div class="preloader-content">
+    <h1 class="preloader-logo">F-square</h1>
+    <div class="preloader-bar"></div>
+  </div>
+</div>
+
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="logo">F-square</a>
+
+    <div class="nav__search">
+  <!-- Added id="navSearchInput" -->
+  <input type="text" id="navSearchInput" placeholder="Search styles" aria-label="Search styles">
+  <button aria-label="Search" id="navSearchBtn">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+  </button>
+</div>
+
+    <nav class="nav__links">
+      <a href="index.html" class="is-active">Home</a>
+      <a href="shop.html">Shop fabrics</a>
+      <a href="shop.html">Collections</a>
+      <a href="about.html">About us</a>
+      <a href="about.html#artisans">Meet the artisans</a>
+      <span class="nav__cart-count is-hidden" data-cart-count>0</span>
+      <a href="login.html" class="btn btn--dark" id="log-btn" style="margin-left: 1rem;">LOG IN</a>
+      <a href="" class="btn btn--dark" id="logout-btn" style="margin-left: 1rem; display: none;">LOG OUT</a>
+    </nav>
+
+    <div class="nav__icons">
+      <button aria-label="Wishlist"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6z"/></svg></button>
+      <!-- <a href="login.html" data-account-link aria-label="Account"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a> -->
+      <a href="cart.html" aria-label="Cart">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h2l2.4 12.4a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L20 8H6"/><circle cx="9" cy="20" r="1"/><circle cx="17" cy="20" r="1"/></svg>
+        <span class="nav__cart-count is-hidden" data-cart-count>0</span>
+      </a>
+    </div>
+
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== HERO / BENTO ===== -->
+<main>
+<section class="hero" id="home">
+  <div class="hero__grid">
+
+    <div class="hero__main ripple-host" id="rippleHost">
+      <img id="rippleSource" class="ripple-source" src="Pics/Pics/Arewa Family Weddings - Nigeria 🇳🇬.jpg" alt="Man in traditional agbada and sunglasses" crossorigin="anonymous">
+      <canvas id="rippleCanvas"></canvas>
+      <div class="hero__copy">
+        <h1 class="inflate-text" id="inflateHeadline">
+          <span class="line">Celebrate</span>
+          <span class="line">African</span>
+          <span class="line">Heritage in</span>
+          <span class="line accent">Every Thread</span>
+        </h1>
+        <p class="hero__sub inflate-fade">Handwoven by local artisans with generations of skill and passion</p>
+        <a href="shop.html" class="btn btn--dark inflate-fade">View collections</a>
+      </div>
+    </div>
+
+    <div class="hero__side">
+      <a class="hero__card" href="shop.html?category=women">
+        <img src="Pics/Pics/Beautiful red dress.jpg" alt="Women's ankara wrap top">
+        <span class="hero__tag">Women</span>
+      </a>
+      <a class="hero__card" href="shop.html?category=men">
+        <img src="Pics/Pics/756393699949238594.jpg" alt="Men's traditional tunic">
+        <span class="hero__tag">Men</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== SECONDARY BENTO ===== -->
+<section class="secondary">
+  <div class="secondary__grid">
+    <a class="feature-card stretch-card" href="shop.html">
+      <img src="Pics/Pics/From inspiration to creation, we bring your dream….jpg" alt="Style it yourself — printed skirt look">
+      <div class="feature-card__scrim"></div>
+      <div class="feature-card__text">
+        <span>Style it yourself</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+      </div>
+    </a>
+
+    <a class="feature-card stretch-card" href="about.html">
+      <img src="Pics/Pics/AFRICA PRINT_ ASOKE- KIMONO_ TROUSER 2 PCS SET.jpg" alt="Handmade with traditional techniques — artisan portrait">
+      <div class="feature-card__scrim"></div>
+      <div class="feature-card__text">
+        <span>Handmade with<br>Traditional Techniques</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+      </div>
+    </a>
+
+    <div class="wear-tradition">
+      <h2>Wear<br>Tradition</h2>
+      <p>Authentic African fabrics, ethically sourced and designed for modern styles.</p>
+      <a href="shop.html" class="btn btn--outline">Browse inspirations</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IMAGE TRACK SLIDESHOW ===== -->
+<section class="track-section" id="collections" style="--track-bg:#EFE6DA;">
+  <div class="track-heading">
+    <span class="eyebrow">Fabric library</span>
+    <h2>Patterns woven with meaning</h2>
+  </div>
+
+  <div class="track-wrap">
+    <button class="track-nav track-nav--prev" id="trackPrev" aria-label="Previous">‹</button>
+
+    <div class="track-viewport" id="trackViewport">
+      <ul class="track" id="track">
+        <li class="track__slide" data-color="#EFE6DA">
+          <img src="Pics/Pics/Yellow Adire Silk Tie-dye Bubu Dress Rich Aunty Vibes by Eldimaa Fashi.jpg" alt="Ankara wax print fabric">
+        </li>
+        <li class="track__slide" data-color="#E3D3BE">
+          <img src="Pics/Pics/long bubu  dress.jpg" alt="Kente woven textile">
+        </li>
+        <li class="track__slide" data-color="#D9CBB8">
+          <img src="Pics/Pics/Have you checked out this organza on the website….jpg" alt="Adire indigo dyed cloth">
+        </li>
+        <li class="track__slide" data-color="#EAD9C4">
+          <img src="Pics/Pics/Handwoven Aso-Oke Bubu Dress _ Nigerian Kaftan Maxi, Striped Statement Occasion Wear.jpg" alt="Aso-oke on the loom">
+        </li>
+        <li class="track__slide" data-color="#E0D2BF">
+          <img src="Pics/Pics/604115737553404509.jpg" alt="Tailor cutting fabric">
+        </li>
+      </ul>
+    </div>
+
+    <button class="track-nav track-nav--next" id="trackNext" aria-label="Next">›</button>
+  </div>
+
+  <div class="track-caption">
+    <div class="track-caption__text" id="trackCaptionText">
+      <h3>Ankara</h3>
+      <p>Bold wax-print cotton, block-dyed in small batches for color that holds.</p>
+    </div>
+    <div class="track-dots" id="trackDots"></div>
+  </div>
+</section>
+
+<!-- ===== ARTISANS STRIP ===== -->
+<section class="artisans" id="artisans">
+  <div class="artisans__copy">
+    <span class="eyebrow">Meet the artisans</span>
+    <h2>Every stitch has a name behind it</h2>
+    <p>From the looms of Rivers to the dye pits of Port Harcourt, each piece passes through hands that have practiced this craft for generations.</p>
+    <a href="about.html" class="btn btn--dark">Meet the artisans</a>
+  </div>
+  <div class="artisans__img">
+    <img src="Pics/Pics/Untitled design.png" alt="Artisan weaving traditional cloth">
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER with stretch-transition image ===== -->
+<footer class="footer">
+  <div class="footer__banner stretch-banner" id="stretchBanner">
+    <img src="Pics/Pics/The leading fashion school in Oyo state Nigeria….jpg" alt="Traditional African fashion couple">
+    <div class="footer__banner-text">
+      <h2>Join the movement to wear culture forward</h2>
+      <a href="login.html" class="btn btn--light">Get 10% off your first order</a>
+    </div>
+  </div>
+<div class="auth-split__social">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 8h2V4h-2a5 5 0 0 0-5 5v2H8v4h2v7h4v-7h3l1-4h-4V9a1 1 0 0 1 1-1z"/></svg>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22H16.6l-5.2-6.8L5.4 22H2.3l8.1-9.3L1 2h6.9l4.7 6.2L18.9 2zm-1.2 18h1.7L7.4 3.9H5.6L17.7 20z"/></svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2c.4 2.4 2 4 4.5 4.2v3c-1.6.1-3-.4-4.5-1.4v6.8a5.9 5.9 0 1 1-5.9-5.9c.4 0 .8 0 1.2.1v3.1a2.8 2.8 0 1 0 2 2.7V2h2.7z"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="whatsapp-float" href="https://wa.me/2348000000000?text=Hi%20F-square%2C%20I%27d%20like%20to%20ask%20about%20your%20fabrics" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+      <span class="whatsapp-float__ping"></span>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10 9.8 9.5 8.5 9.3 8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+    </a>
+
+  <div class="footer__grid">
+    <div class="footer__col footer__brand">
+      <span class="logo logo--light">F-square</span>
+      <p>Handwoven fabrics and tailored fashion, rooted in African heritage.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Shop</h4>
+      <a href="shop.html?category=women">Women</a>
+      <a href="shop.html?category=men">Men</a>
+      <a href="shop.html?category=fabric">Fabrics</a>
+      <a href="shop.html">Collections</a>
+    </div>
+    <div class="footer__col">
+      <h4>Studio</h4>
+      <a href="about.html">About us</a>
+      <a href="about.html#artisans">Meet the artisans</a>
+      <a href="#">Sustainability</a>
+    </div>
+    <div class="footer__col">
+      <h4>Stay in touch</h4>
+      <form id="newsletter" class="footer__form" onsubmit="return false;">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">Join</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span>© 2026 F-square. All rights reserved.</span>
+    <span>Made with care, thread by thread.</span>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="nav.js"></script>
+<script src="script.js"></script>
+<script type="module" src="logout.js"></script>
+<script src="search.js"></script>
+<script>
+  // This logic runs as soon as the script is reached, 
+  // ignoring whether images are broken or still loading.
+  (function() {
+    const preloader = document.getElementById('preloader');
+    
+    if (preloader) {
+      // 1. Force a fade after 1 second no matter what
+      setTimeout(() => {
+        preloader.style.transition = "opacity 0.6s ease";
+        preloader.style.opacity = "0";
+        
+        // 2. Remove it from view so you can click buttons
+        setTimeout(() => {
+          preloader.style.display = "none";
+          preloader.style.visibility = "hidden";
+        }, 600);
+      }, 1000); 
+    }
+  })();
+</script>
+</body>
+</html>
